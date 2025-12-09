@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Moja Strona Domowa</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/formularz.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+	<header>
+		<h1 class="animate__animated animate__bounce">Laboratorium nr 1</h1>
+		<h2>Bartosz Grabski 59233</h2>
+		<nav>
+			<ul>
+				<li><a href="index.html">Strona główna</a></li>
+				<li><a href="hobby.html">Hobby</a></li>
+				<li><a href="formularz.html">Formularz</a></li>
+				<li><a href="galeria.html">Galeria</a></li>
+				<li><a href="notes.html">Notes</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+	<main>
+		<form action="#" method="post" class="papryka-form">
+			<h2>Zgłoś nową paprykę</h2>
+
+			<!-- Nazwa papryki -->
+			<label for="nazwa">Nazwa papryki:</label>
+			<input type="text" id="nazwa" name="nazwa" required placeholder="Nazwa papryki">
+
+			<!-- Opis papryki -->
+			<label for="opis">Opis:</label>
+			<textarea id="opis" name="opis" rows="4" placeholder="Opis papryki" required></textarea>
+
+			<!-- Data odmiany -->
+			<label for="data-odmiany">Data odmiany:</label>
+			<input type="date" id="data-odmiany" name="data-odmiany" required>
+
+			<!-- Kolor papryki -->
+			<label for="kolor">Kolor:</label>
+			<select id="kolor" name="kolor" required>
+				<option value="">-- Wybierz kolor --</option>
+				<option value="czerwony">Czerwony</option>
+				<option value="zielony">Zielony</option>
+				<option value="żółty">Żółty</option>
+				<option value="pomarańczowy">Pomarańczowy</option>
+				<option value="fioletowy">Fioletowy</option>
+			</select>
+
+			<!-- Ostrość -->
+			<label for="ostrosc">Ostrość (SHU):</label>
+			<input type="range" id="ostrosc" name="ostrosc" min="0" max="2000000" step="10000" value="0"
+				oninput="this.nextElementSibling.value = this.value">
+			<output>0</output>
+
+			<!-- Przycisk -->
+			<input type="submit" value="Zgłoś paprykę" id="btn-zglos">
+		</form>
+	</main>
+
+	<footer>
+		<div>
+			<h4>Nawigacja</h4>
+			<ul>
+				<li><a href="index.html">Strona główna</a></li>
+				<li><a href="hobby.html">Hobby</a></li>
+				<li><a href="formularz.html">Formularz</a></li>
+				<li><a href="aktualnosci.html">Aktualności</a></li>
+			</ul>
+		</div>
+		<div>
+			<h4>Kontakt</h4>
+			<ul>
+				<li>bartosz@grabsky.pl</li>
+				<li>+48 511 810 801</li>
+			</ul>
+		</div>
+		<div>
+			<h4>Media</h4>
+			<ul>
+				<li><a href="#">YouTube</a></li>
+				<li><a href="#">GitHub</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+
+</html>

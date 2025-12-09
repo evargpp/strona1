@@ -1,0 +1,81 @@
+nav a[href="notes.html"] {
+	color: #66aaff;
+}
+
+body {
+	margin: 20px auto;
+	font-family: 'Lato';
+	background: #666;
+	color: #fff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+main h2 {
+	font-family: 'Reenie Beanie';
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+main p {
+	font-family: 'Reenie Beanie';
+	font-size: 2rem;
+}
+
+main ul,
+main li {
+	list-style: none;
+}
+
+main ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+main ul li a {
+	text-decoration: none;
+	color: #000;
+	background: #ffc;
+	display: block;
+	height: 10em;
+	width: 10em;
+	padding: 1em;
+	box-shadow: 5px 5px 7px rgba(33, 33, 33, .7);
+	transition: transform .15s linear;
+}
+
+main ul li {
+	margin: 1em;
+}
+
+main ul li:nth-child(even) a {
+	transform: rotate(4deg);
+	position: relative;
+	top: 5px;
+}
+
+main ul li:nth-child(3n) a {
+	transform: rotate(-3deg);
+	position: relative;
+	top: -5px;
+	background:#cfc;
+}
+
+main ul li:nth-child(5n) a {
+	transform: rotate(5deg);
+	position: relative;
+	top: -10px;
+	background:#ccf; 
+}
+
+main ul li a:hover,
+main ul li a:focus {
+	box-shadow: 10px 10px 7px rgba(0, 0, 0, .7);
+	transform: scale(1.25);
+	position: relative;
+	z-index: 5;
+}

@@ -1,0 +1,59 @@
+nav a[href="formularz.html"] {
+	color: #66aaff;
+}
+
+.papryka-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.papryka-form h2 {
+    margin-bottom: 15px;
+    color: #ff4500;
+}
+
+.papryka-form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.papryka-form input[type="text"],
+.papryka-form input[type="date"],
+.papryka-form select,
+.papryka-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.papryka-form input[type="range"] {
+    width: 100%;
+}
+
+.papryka-form input[type="submit"] {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.papryka-form input[type="submit"]:hover {
+    background: #e03e00;
+}
+
+#btn-zglos {
+	display: block;
+    margin: 20px auto 0 auto;
+}
