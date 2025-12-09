@@ -7,7 +7,9 @@
 }
 
 body {
-	background: #f4f4f4;
+	color: #fff;
+	margin: 20px auto;
+	background: #666;
 	color: #222;
 	line-height: 1.6;
 	max-width: 1040px;
